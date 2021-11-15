@@ -8,9 +8,17 @@
 	
 	function change_liste()
 		{
+			let listUl = document.getElementsByTagName('ul');
+			let listLi = document.getElementsByTagName('li');
 
-			
-		
+
+			for (let i = 0; i < listUl.length; i++) {
+				listUl[i].style.listStyleType = 'circle';
+			}
+
+			for (let j = 0; j < listLi.length; j++) {
+				listLi[j].innerHTML = "blabla";
+			}
 		}
 	
 </script>
